@@ -26,7 +26,7 @@ var icloud = {
 		});
 
 		icloud.checkSession(function(err, res, body) {
-			if (err) {
+			if (err || !body) {
 				//session is dead, start new
 				icloud.jar = null;
 				icloud.jar = request.jar();
