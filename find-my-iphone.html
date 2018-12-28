@@ -2,6 +2,10 @@
     RED.nodes.registerType('find-my-iphone', {
         category: 'mobile',
         color: '#A6BBCF',
+        defaults: {
+                username: {value:""},
+                password: {value:""}
+        },
         credentials: {
           username: {type:"text"},
           password: {type:"password"}
